@@ -1,0 +1,10 @@
+<div class="botao-salvar ">
+    <button [disabled]="disabled || loading" type="button" (click)="clickHandle()" class="btn">
+        <span *ngIf="!loading" class="ico"></span>
+        <span *ngIf="!loading" class="txt-btn">{{ textIdle }}</span>
+        <span *ngIf="loading" class="ico carregando"></span>
+        <span *ngIf="loading" class="txt-btn">{{ textLoad }}</span>
+    </button>
+</div>
+
+ 
